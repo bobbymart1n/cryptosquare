@@ -1,3 +1,4 @@
+//Business Logic
 function cryptosquare(string) {
   var userInputArray = string.split("");
   var userOutput = userInputArray.join("");
@@ -13,8 +14,6 @@ function cryptosquare(string) {
       twoByTwo.push([]);
     }
   }
-
-
     for(var j = 0; j < userInputArray.length; j++) {
       twoByTwo[counter].push(userInputArray[j]);
       if (counter === Math.ceil(squareRoot) - 1) {
@@ -23,6 +22,16 @@ function cryptosquare(string) {
         counter += 1;
       }
     }
-
   console.log(twoByTwo);
 }
+
+//User Logic
+$(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    var userInput = $("#userInput").val();
+    var outputString = cryptosquare(userInput);
+    $("#output p").text(outputString);
+    $("#output").show();
+  });
+});
