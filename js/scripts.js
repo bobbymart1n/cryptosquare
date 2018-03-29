@@ -1,4 +1,6 @@
 function cryptosquare(string) {
-  var userInput = string.split("");
-  console.log(userInput);
+  var userInputArray = string.split("");
+  console.log(userInputArray);
+  var userOutput = userInputArray.join("");
+  console.log(userOutput);
 }
