@@ -16,10 +16,12 @@ _This app takes a block of text input by the user and converts it to a grid of l
 * _For five characters, the program will populate a 3x2 grid horizontally and return characters read vertically._
   * _input:abcde output:acebd_
   * _For six characters, the program will populate a 3x2 grid horizontally and return characters read vertically._
-    * _input:abcdef output:acebd f
+    * _input:abcdef output:acebd f_
 * _For seven characters, the program will populate a 3x3 grid horizontally and return characters read vertically._
   * _input:abcdefg output:adgbe cf_
-
+* _program will lowercase all letters_
+* _Program will remove white space_
+* _Program will remove punctuation_
 
 ## Setup/Installation Requirements
 
